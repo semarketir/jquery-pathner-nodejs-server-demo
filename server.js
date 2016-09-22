@@ -11,9 +11,9 @@ var JWT_KEY = 'your secret key';
 
 var app = express();
 
+app.set('port', (process.env.PORT || 5000));
+
 var CONFIG = {
-    host: '0',
-    port: 3000,
     auth: {
         clientId: '63c2dd2e4c395ae09fa013ea3c1f9bf6392b19f4', // insert your client id in here
         clientSecret: '24004af2b5bf592663ad30c052b20de336154434' // insert your client secret in here
@@ -116,6 +116,6 @@ app.post('/post-moment', function (req, res, next) {
     }
 });
 
-app.listen(CONFIG.port, function () {
-    console.log("Example app listening at http://%s:%s", CONFIG.host, CONFIG.port);
+app.listen(app.get('port'), function () {
+    console.log("Example app is running on port %s", app.get('port'));
 });
