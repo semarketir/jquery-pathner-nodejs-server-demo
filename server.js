@@ -103,7 +103,7 @@ app.post('/post-moment', function (req, res, next) {
                 source_url: imageUrl,
                 caption: caption.join('\n'),
                 // Set true if your app has been accepted by Admin
-                private: false
+                private: true
             })
         }, function (error, response, body) {
             if (error) {
