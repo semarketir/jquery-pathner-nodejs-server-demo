@@ -88,6 +88,7 @@ app.post('/post-moment', function (req, res, next) {
                 req.body.description,
                 req.body.url
             ];
+        console.log(imageUrl);
         if (req.body.caption) {
             // insert user caption in top of caption
             caption.unshift(req.body.caption + '\n\n');
