@@ -15,8 +15,8 @@ app.set('port', (process.env.PORT || 5000));
 
 var CONFIG = {
     auth: {
-        clientId: '63c2dd2e4c395ae09fa013ea3c1f9bf6392b19f4', // insert your client id in here
-        clientSecret: '24004af2b5bf592663ad30c052b20de336154434' // insert your client secret in here
+        clientId: '<your-client-id>', // insert your client id in here
+        clientSecret: '<your-client-secret>' // insert your client secret in here
     },
     api: {
         access_token: 'https://partner.path.com/oauth2/access_token',
