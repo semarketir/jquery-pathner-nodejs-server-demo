@@ -9,7 +9,7 @@ $(document).ready(function () {
                 url: window.location.href,
                 image: $('#image_preview').attr('src'),
                 title: $(self).data('title'),
-                description: $('#preview_description').text()
+                description: $('#preview_description').text().trim()
             };
         },
 
