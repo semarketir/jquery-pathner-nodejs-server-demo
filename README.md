@@ -15,7 +15,7 @@ A simple Server side app to handle request for records or information from jquer
 ```$ npm install```
 
 #### Install client dependencies with bower
-```$ bower install```
+```$ npm run bower```
 
 #### Register Application
 Link: https://path.com/developers/app/new
